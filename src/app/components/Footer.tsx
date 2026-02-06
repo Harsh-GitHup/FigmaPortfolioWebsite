@@ -32,13 +32,15 @@ export const Footer = () => {
   );
 };
 
-const SocialLink = ({ href, icon }: { href: string; icon: React.ReactNode }) => (
-  <a
-    href={href}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="p-3 bg-white/5 rounded-full text-gray-400 hover:text-[#39ff14] hover:bg-white/10 transition-all hover:scale-110"
-  >
-    {icon}
-  </a>
-);
+const SocialLink = ({ href, icon }: { href: string; icon: React.ReactNode }) => {
+  const isMailto = href.startsWith('mailto:');
+  return (
+    <a
+      href={href}
+      {...(!isMailto && { target: "_blank", rel: "noopener noreferrer" })}
+      className="p-3 bg-white/5 rounded-full text-gray-400 hover:text-[#39ff14] hover:bg-white/10 transition-all hover:scale-110"
+    >
+      {icon}
+    </a>
+  );
+};

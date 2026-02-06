@@ -17,6 +17,3 @@ yarn-error.log*
 # OS
 .DS_Store
 Thumbs.db
-
-# Lock files (optional - some projects commit these)
-package-lock.json
