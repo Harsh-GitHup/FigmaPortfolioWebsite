@@ -73,9 +73,9 @@ export const Header = () => {
                 </a>
               ))}
               <div className="flex gap-6 mt-4 pt-6 border-t border-white/10">
-                <SocialIcon Icon={Github} />
-                <SocialIcon Icon={Linkedin} />
-                <SocialIcon Icon={Twitter} />
+                <SocialIcon Icon={Github} href="https://github.com/Harsh-GitHup" />
+                <SocialIcon Icon={Linkedin} href="https://www.linkedin.com/in/harshkesharwani" />
+                <SocialIcon Icon={Twitter} href="https://x.com/HarshKesha91325" />
               </div>
             </div>
           </motion.div>
@@ -85,8 +85,8 @@ export const Header = () => {
   );
 };
 
-const SocialIcon = ({ Icon }: { Icon: any }) => (
-  <a href="#" className="text-gray-400 hover:text-[#39ff14] transition-colors">
+const SocialIcon = ({ Icon, href }: { Icon: any; href: string }) => (
+  <a href={href} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#39ff14] transition-colors">
     <Icon size={24} />
   </a>
 );

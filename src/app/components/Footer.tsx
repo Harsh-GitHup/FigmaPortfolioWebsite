@@ -13,10 +13,10 @@ export const Footer = () => {
           </div>
 
           <div className="flex gap-6">
-            <SocialLink href="#" icon={<Github size={20} />} />
-            <SocialLink href="#" icon={<Linkedin size={20} />} />
-            <SocialLink href="#" icon={<Twitter size={20} />} />
-            <SocialLink href="mailto:hello@dev.io" icon={<Mail size={20} />} />
+            <SocialLink href="https://github.com/Harsh-GitHup" icon={<Github size={20} />} />
+            <SocialLink href="https://www.linkedin.com/in/harshkesharwani" icon={<Linkedin size={20} />} />
+            <SocialLink href="https://x.com/HarshKesha91325" icon={<Twitter size={20} />} />
+            <SocialLink href="mailto:harshkesharwani037@gmail.com" icon={<Mail size={20} />} />
           </div>
         </div>
 
@@ -32,11 +32,15 @@ export const Footer = () => {
   );
 };
 
-const SocialLink = ({ href, icon }: { href: string; icon: React.ReactNode }) => (
-  <a
-    href={href}
-    className="p-3 bg-white/5 rounded-full text-gray-400 hover:text-[#39ff14] hover:bg-white/10 transition-all hover:scale-110"
-  >
-    {icon}
-  </a>
-);
+const SocialLink = ({ href, icon }: { href: string; icon: React.ReactNode }) => {
+  const isMailto = href.startsWith('mailto:');
+  return (
+    <a
+      href={href}
+      {...(!isMailto && { target: "_blank", rel: "noopener noreferrer" })}
+      className="p-3 bg-white/5 rounded-full text-gray-400 hover:text-[#39ff14] hover:bg-white/10 transition-all hover:scale-110"
+    >
+      {icon}
+    </a>
+  );
+};
