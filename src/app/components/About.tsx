@@ -27,7 +27,7 @@ export const About = () => {
                   Hello! I'm <span className="text-white font-semibold">Harsh Kesharwani</span>, a passionate software developer with a strong foundation in full-stack web development.
                 </p>
                 <p>
-                  I am a <span className="text-[#39ff14]">B.Tech graduate</span> in Computer Science & Engineering from the <span className="text-white">Corporate Institute of Science & Technology</span>, Class of 2024. My academic journey provided me with deep insights into algorithms, data structures, and software engineering principles.
+                  I am a <span className="text-[#39ff14]">B.Tech graduate</span> in Computer Science & Engineering from the <span className="text-white">Corporate Institute of Science & Technology</span>, Batch of 2024. My academic journey provided me with deep insights into algorithms, data structures, and software engineering principles.
                 </p>
                 <p>
                   To further hone my practical skills, I completed comprehensive <span className="text-[#39ff14]">Full Stack Python training</span> at <span className="text-white">Naresh IT</span>, where I mastered modern web technologies including Django, React, and database management. I love building scalable applications that solve real-world problems.
