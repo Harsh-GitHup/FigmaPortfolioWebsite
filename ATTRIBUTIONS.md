@@ -214,4 +214,4 @@ This project wouldn't be possible without the hard work and dedication of thousa
 **Last Updated**: February 2026  
 **Project**: Futuristic Dark Portfolio Website  
 **Author**: Harsh Kesharwani  
-**Repository**: [Harsh-GitHup/Futuristicdarkportfoliowebsite](https://github.com/Harsh-GitHup/Futuristicdarkportfoliowebsite)
+**Repository**: [Harsh-GitHup/FigmaPortfolioWebsite](https://github.com/Harsh-GitHup/FigmaPortfolioWebsite)
