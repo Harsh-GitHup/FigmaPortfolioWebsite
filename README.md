@@ -71,8 +71,8 @@ A stunning, modern portfolio website featuring a dark theme with neon green acce
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/Harsh-GitHup/Futuristicdarkportfoliowebsite.git
-cd Futuristicdarkportfoliowebsite
+git clone https://github.com/Harsh-GitHup/FigmaPortfolioWebsite.git
+cd FigmaPortfolioWebsite
 ```
 
 ### Install Dependencies
@@ -109,7 +109,7 @@ npm run preview
 ## 📂 Project Structure
 
 ```
-Futuristicdarkportfoliowebsite/
+FigmaPortfolioWebsite/
 ├── src/
 │   ├── app/
 │   │   ├── components/
@@ -217,10 +217,10 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 👨‍💻 Author
 
 **Harsh Kesharwani**
-- Portfolio: [Your Live URL]
+- Portfolio: [Live URL](https://harsh-githup.github.io/My-Portfolio/)
 - GitHub: [@Harsh-GitHup](https://github.com/Harsh-GitHup)
-- LinkedIn: [Your LinkedIn](#)
-- Email: your.email@example.com
+- LinkedIn: [@Harsh Kesharwani](https://www.linkedin.com/in/harshkesharwani)
+- Email: harshkesharwani037@gmail.com
 
 ## 🙏 Acknowledgments
 
@@ -238,11 +238,11 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 🐛 Bug Reports
 
-Found a bug? Please open an issue on [GitHub Issues](https://github.com/Harsh-GitHup/Futuristicdarkportfoliowebsite/issues).
+Found a bug? Please open an issue on [GitHub Issues](https://github.com/Harsh-GitHup/FigmaPortfolioWebsite/issues).
 
 ## 💡 Feature Requests
 
-Have an idea? Feel free to open a feature request on [GitHub Issues](https://github.com/Harsh-GitHup/Futuristicdarkportfoliowebsite/issues).
+Have an idea? Feel free to open a feature request on [GitHub Issues](https://github.com/Harsh-GitHup/FigmaPortfolioWebsite/issues).
 
 ---
 
