@@ -7,16 +7,29 @@ export const ScrollToTop = () => {
 
   // Show button when page is scrolled down 300px
   useEffect(() => {
+    let timeoutId: NodeJS.Timeout | null = null;
+
     const toggleVisibility = () => {
-      if (window.scrollY > 300) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
+      if (timeoutId) {
+        clearTimeout(timeoutId);
       }
+
+      timeoutId = setTimeout(() => {
+        if (window.scrollY > 300) {
+          setIsVisible(true);
+        } else {
+          setIsVisible(false);
+        }
+      }, 100);
     };
 
     window.addEventListener('scroll', toggleVisibility);
-    return () => window.removeEventListener('scroll', toggleVisibility);
+    return () => {
+      window.removeEventListener('scroll', toggleVisibility);
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
+    };
   }, []);
 
   // Scroll to top smoothly
@@ -37,10 +50,10 @@ export const ScrollToTop = () => {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
           onClick={scrollToTop}
-          className="fixed bottom-6 right-6 z-50 w-12 h-12 md:w-12 md:h-12 sm:w-10 sm:h-10 bg-[#32d911] text-black rounded-full shadow-lg hover:shadow-xl transition-shadow flex items-center justify-center"
+          className="fixed bottom-6 right-6 z-50 w-10 h-10 md:w-12 md:h-12 bg-[#32d911] text-black rounded-full shadow-lg hover:shadow-xl transition-shadow flex items-center justify-center"
           aria-label="Scroll to top"
         >
-          <ChevronUp size={24} className="sm:w-5 sm:h-5" />
+          <ChevronUp className="w-5 h-5 md:w-6 md:h-6" />
         </motion.button>
       )}
     </AnimatePresence>
