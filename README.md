@@ -8,7 +8,7 @@ A stunning, modern portfolio website featuring a dark theme with neon green acce
 
 ## 🎯 Live Demo
 
-🚀 **[View Live Site](#)** _(Deploy to Vercel to get your live URL)_
+🚀 **[View Live Site](https://harshportfolio-beta.vercel.app/)** _(Deployed to Vercel - live URL)_
 
 ## ✨ Features
 
